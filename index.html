@@ -1031,14 +1031,14 @@
     });
   });
 
-  /* ---------- Util ---------- */
+ 
   function escapeHtml(str){
     return String(str || '').replace(/[&<>"']/g, function(m){
       return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m];
     });
   }
 
-  /* ---------- Armada: load dari Supabase, render fleet cards + form reservasi ---------- */
+
   function renderFleet(rows){
     var grid = document.getElementById('fleetGrid');
     if(!rows.length){ grid.innerHTML = '<p class="places-loading">Belum ada armada.</p>'; return; }
